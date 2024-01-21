@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    tools:context=".activities.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/main_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@raw/main_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
+        <ImageView
+            android:id="@+id/calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@raw/calender"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logo" />
+
+        <TextView
+            android:id="@+id/day_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/calender"
+            android:layout_marginTop="2dp"
+            android:text="FRIDAY"
+            android:letterSpacing="0.3"
+            android:textColor="#6A6969"
+            android:textStyle="normal"/>
+
+        <RelativeLayout
+            android:id="@+id/date_relative"
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/day_name"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/month_hijri_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="shabban"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15sp"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/day_hijri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="80sp"
+                    android:layout_below="@+id/month_hijri_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="30"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/hijri_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/day_hijri"
+                    android:layout_centerHorizontal="true"
+                    android:text="1443"
+                    android:letterSpacing="0.2"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="normal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/month_greo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="January"
+                    android:textSize="15sp"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/greo_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="80sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/month_greo_name"
+                    android:text="30"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/greo_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/greo_day"
+                    android:text="2021"
+                    android:letterSpacing="0.2"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="normal"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/date_relative"
+            android:letterSpacing="0.1"
+            android:textColor="#C0C0C0"
+            android:textSize="12sp"
+            android:textStyle="normal"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rela1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rectangle1_rela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                 <ImageView
+                     android:id="@+id/rectangle1"
+                     android:layout_width="130dp"
+                     android:layout_height="126dp"
+                     android:layout_centerHorizontal="true"
+                     android:src="@raw/rectangle_1"/>
+
+                <RelativeLayout
+                    android:id="@+id/real_duhur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/Dhuhr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#C0C0C0"
+                        android:textSize="13sp"
+                        android:letterSpacing="0.5"
+                        android:text="DHUHR"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Dhuhrtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Dhuhr"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#787777"
+                        android:textSize="15sp"
+                        android:letterSpacing="0.4"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/duhur_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Dhuhrtime"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@raw/add"/>
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rectangle2_rela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                 <ImageView
+                     android:id="@+id/rectangle2"
+                     android:layout_width="130dp"
+                     android:layout_height="126dp"
+                     android:layout_centerHorizontal="true"
+                     android:src="@raw/rectangle_1"/>
+
+                <RelativeLayout
+                    android:id="@+id/real_sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/Sunrise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#C0C0C0"
+                        android:textSize="13sp"
+                        android:letterSpacing="0.5"
+                        android:text="SUNRISE"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Sunrisetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Sunrise"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#787777"
+                        android:textSize="15sp"
+                        android:letterSpacing="0.4"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/sunrise_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Sunrisetime"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@raw/sun"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rectangle3_rela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/rectangle3"
+                    android:layout_width="130dp"
+                    android:layout_height="126dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@raw/rectangle_1"/>
+
+                <RelativeLayout
+                    android:id="@+id/real_Fajr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/Fajr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#C0C0C0"
+                        android:textSize="13sp"
+                        android:letterSpacing="0.5"
+                        android:text="FAJR"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Fajrtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Fajr"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#787777"
+                        android:textSize="15sp"
+                        android:letterSpacing="0.4"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/fajr_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Fajrtime"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@raw/add"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rela1"
+            android:layout_marginTop="2dp">
+
+            <RelativeLayout
+            android:id="@+id/rectangle4_rela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/rectangle4"
+                    android:layout_width="130dp"
+                    android:layout_height="126dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@raw/rectangle_1"/>
+
+                <RelativeLayout
+                    android:id="@+id/real_Isha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/Isha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#C0C0C0"
+                        android:textSize="13sp"
+                        android:letterSpacing="0.5"
+                        android:text="ISHAA"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Ishatime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/Isha"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#787777"
+                        android:textSize="15sp"
+                        android:letterSpacing="0.4"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/isha_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Ishatime"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@raw/add"/>
+
+                </RelativeLayout>
+
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rectangle5_rela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/rectangle5"
+                    android:layout_width="130dp"
+                    android:layout_height="126dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@raw/rectangle_1"/>
+
+                <RelativeLayout
+                    android:id="@+id/real_Maghrib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/Maghrib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#C0C0C0"
+                        android:textSize="13sp"
+                        android:letterSpacing="0.5"
+                        android:text="MAGHRIB"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Maghribtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Maghrib"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#787777"
+                        android:textSize="15sp"
+                        android:letterSpacing="0.4"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/maghrib_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Maghribtime"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@raw/add"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rectangle6_rela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/rectangle6"
+                    android:layout_width="130dp"
+                    android:layout_height="126dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@raw/rectangle_1"/>
+
+                <RelativeLayout
+                    android:id="@+id/real_Asr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/Asr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#C0C0C0"
+                        android:textSize="13sp"
+                        android:letterSpacing="0.5"
+                        android:text="ASR"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/Asrtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Asr"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#787777"
+                        android:textSize="15sp"
+                        android:letterSpacing="0.4"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/asr_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Asrtime"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@raw/add"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('play-services-basement-17.1.0.aar'))

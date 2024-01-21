@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    android:background="@raw/login_back"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@raw/logo_main"/>
+
+        <EditText android:id="@+id/editemail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="@color/hint_color"
+            android:hint="ENTER YOUR E.MAIL"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/hint_color"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:layout_marginTop="70dp"
+            android:drawableRight="@raw/email"
+            android:textDirection="anyRtl"/>
+
+        <EditText android:id="@+id/editusername"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="@color/hint_color"
+            android:hint="ENTER YOUR NAME"
+            android:layout_below="@+id/editemail"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/hint_color"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@raw/user"
+            android:textDirection="anyRtl"/>
+
+
+
+        <EditText android:id="@+id/editpassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="@color/hint_color"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editusername"
+            android:layout_marginTop="10dp"
+            android:hint="ENTER PASSWORD"
+            android:textColorHint="@color/hint_color"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:drawableRight="@raw/password"
+            android:textDirection="anyRtl"/>
+
+        <EditText android:id="@+id/editpasswordconfirm"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="@color/hint_color"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editpassword"
+            android:layout_marginTop="10dp"
+            android:hint="CONFIRM PASSWORD"
+            android:textColorHint="@color/hint_color"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:drawableRight="@raw/password"
+            android:textDirection="anyRtl"/>
+
+
+        <Button
+            android:id="@+id/button"
+            android:background="@drawable/bottom_box"
+            android:layout_marginLeft="2dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="SIGN UP"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editpasswordconfirm"
+            android:layout_marginTop="70dp"
+            android:textSize="15sp"
+            android:textColor="@color/button_text_color" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

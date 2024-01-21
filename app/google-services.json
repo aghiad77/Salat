@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "599356201524",
+    "firebase_url": "https://salat-7870d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "salat-7870d",
+    "storage_bucket": "salat-7870d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599356201524:android:de3acacdce16aa22d54861",
+        "android_client_info": {
+          "package_name": "com.example.salat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599356201524-7n348e8j8du11st5ps9rsf3o4tmfk7kn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.salat",
+            "certificate_hash": "d9d395bb0ebc196ff5424d66f9d3fa4cf6f5bda6"
+          }
+        },
+        {
+          "client_id": "599356201524-2pg9jn15i7g9r3hbq0or3g0m6jqq6paf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9nI46jkgUq1Zqa3b71ssGsp8Q0Z2mrUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599356201524-2pg9jn15i7g9r3hbq0or3g0m6jqq6paf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
